@@ -1,0 +1,32 @@
+{
+  "name": "typescript-bug-hunting-practice",
+  "version": "1.0.0",
+  "description": "TypeScript project with intentional bugs for students to practice the CODE method",
+  "main": "dist/student-management.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/student-management.js",
+    "dev": "ts-node src/student-management.ts",
+    "lint": "eslint src/**/*.ts",
+    "type-check": "tsc --noEmit",
+    "test": "ts-node src/student-management.test.ts",
+    "test:compiled": "tsc && node dist/student-management.test.js"
+  },
+  "keywords": [
+    "typescript",
+    "debugging",
+    "education",
+    "CODE-method"
+  ],
+  "author": "SDD Class Instructor",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0"
+  },
+  "dependencies": {}
+}
