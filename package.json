@@ -9,8 +9,9 @@
     "dev": "ts-node src/student-management.ts",
     "lint": "eslint src/**/*.ts",
     "type-check": "tsc --noEmit",
-    "test": "ts-node src/student-management.test.ts",
-    "test:compiled": "tsc && node dist/student-management.test.js"
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run"
   },
   "keywords": [
     "typescript",
@@ -22,11 +23,12 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "typescript": "^5.0.0",
-    "ts-node": "^10.9.0",
-    "eslint": "^8.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0"
-  },
-  "dependencies": {}
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitest/ui": "^3.2.4",
+    "eslint": "^8.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.2.4"
+  }
 }
